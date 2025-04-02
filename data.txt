@@ -1,0 +1,39 @@
+pragma once
+
+template<typename T>
+requires std::float<T>
+class complex_number{
+    T real;
+    T imm;
+    
+public:
+ complex_number()
+   : real(0), imm(0)
+ {}
+
+ complex_number(T a, T b)
+   :real(a),imm(b) 
+
+ complex_number() somma const(){
+    return 
+ }
+ T a() const{
+    return real;
+ }
+ T b() const{
+    return imm;
+ }
+ complex_number() coniugato const{
+    return complex_number(a(),-b());
+ }
+
+};
+template <typename T>
+std::ostream& operator<<(std::ostream& os, const complex_number<T>& c) {
+    os << c.a() << "+" << r.den()<<"i";
+    return os;
+}
+std::ostream& operator somma(std::ostream& os,const Complex_Number<T>& c) {
+    os <<complex_number(real +r.real ,imm+r.imm); 
+    return os
+}
